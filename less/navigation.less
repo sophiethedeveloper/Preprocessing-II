@@ -36,4 +36,29 @@ header {
             }
         }
     }
+
+    @media @mobile {
+        width: 500px;
+
+        .header {
+            .flex-center();
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            .header-title {
+                width: 100%;
+
+                h1 {
+                    .flex-center();
+                }
+            }
+            .navbar {
+                width: 80%;
+                .nav-links{
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+            }
+        }
+    }
 }
