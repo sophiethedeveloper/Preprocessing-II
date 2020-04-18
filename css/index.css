@@ -325,6 +325,8 @@ header .header .navbar .nav-links .nav-item {
   .home .content-pick {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 20px;
   }
 }
 .home .content-pick .destination {
@@ -333,8 +335,8 @@ header .header .navbar .nav-links .nav-item {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 90%;
-    margin: 30px;
+    width: 80%;
+    margin: 10px 50px;
   }
 }
 .home .content-pick .btn {
