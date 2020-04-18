@@ -1,4 +1,16 @@
 .home {
+  
+  main {
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      margin: 0 20px;
+    }
+    
+    .main-info {
+      margin-top: 2.5rem;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,11 +18,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      margin: 30px 20px;
+      .flex-center();
+      flex-direction: column;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .img-content {
@@ -20,12 +43,23 @@
       img {
         border-radius: 10px;
       }
+
+      @media @mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+      }
     }
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,20 +76,89 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 90%;
+      margin: 30px;
+    }
+
     img {
       border-radius: 10px;
     }
+    
   }
 
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 20px;
+     
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 80%;
+        margin: 10px 50px;
+      }
+    }
+
+    .btn {
+      .button(@button-bg, @main-bg);
     }
   }
+
+  .contact-form {
+    width: 75%;
+    margin: 40px auto 30px;
+
+    h2 {
+      .flex-center();
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      font-weight: 600;
+
+      @media @mobile {
+        font-size: 3rem;
+      }
+    }
+    
+    form {
+      .flex-center();
+      flex-direction: column;
+
+      label {
+        font-family: 'Indie Flower', cursive;
+        font-size: 2.5rem;
+      }
+        input[type=text], input[type=email], select, textarea {
+          width: 100%; 
+          padding: 1.2rem; 
+          border: 1px solid #ccc; 
+          border-radius: 4px; 
+          margin-top: 0.6rem; 
+          margin-bottom: 1.5rem; 
+          resize: vertical;
+        }
+        input[type=submit] {
+          .button(@button-bg, @main-bg);
+          width: 40%;
+
+          @media @mobile {
+            width: 100%;
+          }
+        }
+    }
+
+    
+  }
 }// home
+
