@@ -318,6 +318,7 @@ header .header .navbar .nav-links .nav-item {
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
@@ -349,6 +350,57 @@ header .header .navbar .nav-links .nav-item {
   border-radius: 15px;
   margin: 1rem 0;
   cursor: pointer;
+}
+.home .contact-form {
+  width: 75%;
+  margin: 40px auto 30px;
+}
+.home .contact-form h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .home .contact-form h2 {
+    font-size: 3rem;
+  }
+}
+.home .contact-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .contact-form form label {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5rem;
+}
+.home .contact-form form input[type=text],
+.home .contact-form form input[type=email],
+.home .contact-form form select,
+.home .contact-form form textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 0.6rem;
+  margin-bottom: 1.5rem;
+  resize: vertical;
+}
+.home .contact-form form input[type=submit] {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  border: 0.1rem solid #17A2B8;
+  border-radius: 15px;
+  margin: 1rem 0;
+  cursor: pointer;
+  width: 40%;
 }
 .footer {
   width: 100%;
