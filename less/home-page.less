@@ -151,6 +151,10 @@
         input[type=submit] {
           .button(@button-bg, @main-bg);
           width: 40%;
+
+          @media @mobile {
+            width: 100%;
+          }
         }
     }
 

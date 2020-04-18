@@ -402,6 +402,11 @@ header .header .navbar .nav-links .nav-item {
   cursor: pointer;
   width: 40%;
 }
+@media (max-width: 500px) {
+  .home .contact-form form input[type=submit] {
+    width: 100%;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
